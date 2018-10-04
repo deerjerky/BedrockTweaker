@@ -1,0 +1,10 @@
+name: BedrockTweaker
+author: EventfulDeer48
+version: 0.0.1-ALPHA(Unstable!)
+api: 3.0.0, 4.0.0
+main: EventfulDeer48\main
+commands:
+  bedrocktweakerconfig:
+    description: Configuration for BedrockTweaker.
+    usage: /bedrocktweakerconfig
+    aliases: [btconfig, btweakerconfig, bedrocktweakersettings, btsettings]
