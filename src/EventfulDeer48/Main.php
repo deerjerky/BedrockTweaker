@@ -9,6 +9,7 @@ use pocketmine\command\Command;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\block\BlockBreakEvent;
 use EventfulDeer48\blocks\Bedrock;
+use pocketmine\block\BlockFactory;
 
 class Main extends PluginBase implements Listener {
 
