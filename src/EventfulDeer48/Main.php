@@ -8,11 +8,13 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\block\BlockBreakEvent;
+use EventfulDeer48\blocks\Bedrock;
 
 class Main extends PluginBase implements Listener {
 
   public function onEnable() : void {
 	  $this->getServer()->getPluginManager->registerEvents($this, $this);
+	  BlockFactory::registerBlock(new Bedrock(), true);
 
 
   }
