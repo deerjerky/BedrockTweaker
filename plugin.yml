@@ -2,7 +2,7 @@ name: BedrockTweaker
 authors: [EventfulDeer48, RedCraftPE]
 version: 0.0.1-ALPHA(Unstable!)
 api: 3.0.0, 4.0.0
-main: EventfulDeer48\main
+main: EventfulDeer48\BedrockTweaker
 commands:
   bedrocktweakertoggle:
     description: Turns on or off breakable bedrock.
