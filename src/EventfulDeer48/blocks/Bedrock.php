@@ -2,8 +2,10 @@
 declare(strict_types=1);
 namespace EventfulDeer48;
 
-use pocketmine\block\solid;
+use pocketmine\block\Solid;
 use pocketmine\item\TieredTool;
+use pocketmine\block\BlockToolType;
+use EventfulDeer48\BedrockTweaker;
 
 class Bedrock extends Solid{
 
