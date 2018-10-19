@@ -10,7 +10,7 @@ use pocketmine\utils\TextFormat;
 use pocketmine\event\block\BlockBreakEvent;
 include EventfulDeer48\blocks\Bedrock;
 
-class Main extends PluginBase implements Listener {
+class BedrockTweaker extends PluginBase implements Listener {
 
   public function onEnable() : void {
 
