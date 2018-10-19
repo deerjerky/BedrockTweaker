@@ -1,6 +1,6 @@
 name: BedrockTweaker
 authors: [EventfulDeer48, RedCraftPE]
-version: 0.0.1-ALPHA(Unstable!)
+version: 0.0.2-Unfinished
 api: 3.0.0, 4.0.0
 main: EventfulDeer48\BedrockTweaker
 commands:
