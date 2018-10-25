@@ -9,24 +9,27 @@ use EventfulDeer48\BedrockTweaker;
 
 class Bedrock extends Solid{
 
+	$config[0] = 100;
+	$config[1] = 20000;
+
 	protected $id = self::BEDROCK;
-  
+
 	public function __construct(){
 	}
 	public function getName() : string{
-  
+
 		return "Bedrock";
 	}
 	public function getHardness() : float{
-  
-		return 100;
+
+		return $config[0];
 	}
 	public function getBlastResistance() : float{
-  
-		return 20000;
+
+		return $config[1];
 	}
 	public function isBreakable(Item $item) : bool{
-  
+
 		return true;
 	}
 }
