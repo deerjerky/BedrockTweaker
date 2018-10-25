@@ -31,20 +31,71 @@ class BedrockTweaker extends PluginBase implements Listener {
     $this->getLogger()->info(TextFormat::RED . "BedrockTweaker is now disabled on " . $this->getServer()->getName());
 
   }
-	
+
   public function onBreak(BlockBreakEvent $event) {
 
-	    $block = $event->getBlock();
+    $block = $event->getBlock();
 
-	    if ($block->getID() === 7) {
+    if ($block->getID() === 7) {
 
-	        if ($event->getItem()->getID() !== 278) {
+      if ($event->getItem()->getID() !== 278) {
 
-	            $event->setCancelled(true);
+        $event->setCancelled(true);
 	        }
 	    }
 	}
 
+  public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
+
+    $command = strtolower($command->getName());
+    $prefix = TextFormat::WHITE . "[" . TextFormat::GREEN . "Bedrock" . TextFormat::ORANGE . "Tweaker" . TextFormat::WHITE . "]" . TextFormat::GRAY . ">>";
+
+    switch($command) {
+
+      case "bedrocksethardness":
+
+        if ($sender->hasPermission("bedrocktweaker.setbedrock") || $sender->hasPermission("bedrocktweaker.*")) {
+
+          if (!$args) {
+
+            $sender->sendMessage($prefix . TextFormat::RED . "Please enter a valid value.");
+            return true;
+
+          } elseif ($args[0]) {
+
+            $config[0] = $args[0];
+            $sender->sendMessage($prefix . TextFormat::GREEN . "Successfully set the bedrock hardness to " . $config[0]);
+            return true;
+
+          } else {
+            return false;
+          }
+        }
+
+        break;
+
+        case "bedrocksetblastresistance":
+
+          if ($sender->hasPermission("bedrocktweaker.setbedrock") || $sender->hasPermission("bedrocktweaker.*")) {
+
+            if (!$args) {
+
+              $sender->sendMessage($prefix . TextFormat::RED . "Please enter a valid value.");
+              return true;
+
+            } elseif ($args[0]) {
+
+              $config[1] = $args[0];
+              $sender->sendMessage($prefix . TextFormat::GREEN . "Successfully set the bedrock blast resistance to " . $config[1]);
+              return true;
+
+            } else {
+              return false;
+            }
+          }
+    }
+  }
 }
 
 ?>
+
