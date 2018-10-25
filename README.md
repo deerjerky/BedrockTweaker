@@ -4,4 +4,4 @@ BedrockTweaker is a Plugin for MCPE Servers to use freely. This plugin is UNFINI
 # Changelog
 0.0.2 - Uploaded the project to GitHub
 0.0.7 - Added a bunch of changes to the code and added some commands
-- THIS PLUGIN IS NOT FINISHED YET -
+THIS PLUGIN IS NOT FINISHED YET
