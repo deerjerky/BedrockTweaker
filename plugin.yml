@@ -1,28 +1,21 @@
 name: BedrockTweaker
 authors: [EventfulDeer48, RedCraftPE]
-version: 0.0.2-Unfinished
+version: 0.0.7-Unfinished
 api: 3.0.0, 4.0.0
 main: EventfulDeer48\BedrockTweaker
 commands:
-  bedrocktweakertoggle:
-    description: Turns on or off breakable bedrock.
-    usage: /bedrocktweakertoggle
-    aliases: [bttoggle]
-  bedrocktweakersethardness:
+  bedrocksethardness:
     description: Sets the hardness of bedrock (how long it takes to break it).
-    usage: /bedrocktweakersethardness
-    aliases: [btsethardness, bthardness]
-  bedrocktweakersetblastresistance:
+    usage: /bedrocksethardness
+    aliases: [bsethardness, bhardness]
+  bedrocksetblastresistance:
     description: Sets the blast resistance of bedrock (how resistant it is to blast damage).
-    usage: /bedrocktweakersetblastresistance
-    aliases: [btsetblastresistance, btblastresistance, btsetresistance, btresistance]
+    usage: /bedrocksetblastresistance
+    aliases: [bsetblastresistance, bblastresistance, bsetresistance, bresistance]
 permissions:
   bedrocktweaker.*:
     default: op
     children:
-      bedrocktweaker.toggle:
-        default: op
-        description: With this permission players will be able to turn on and off breakable bedrock.
       bedrocktweaker.setbedrock:
         default: op
-        description: With this permission players will be able to change the Hardness and Blast Resistance of Bedrock.
+        description: With this permission players will be able to change the Hardness (How hard bedrock is) and the Blast Resistance (The resistance to blast damage) of bedrock.
