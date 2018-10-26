@@ -101,8 +101,8 @@ class BedrockTweaker extends PluginBase implements Listener {
 	    if ($sender->hasPermission("bedrock.stats" || $sender->hasPermission("bedrocktweaker.*")) {
 		    
 	      $sender->sendMessage($prefix . TextFormat::WHITE . "The current stats of Bedrock are:");
-	      $sender->sendMessage($prefix . TextFormat::GRAY . "Hardness: " . $config[0]);
-	      $sender->sendMessage($prefix . TextFormat::GRAY . "Blast Resistance: " . $config[1]);
+	      $sender->sendMessage($prefix . TextFormat::GRAY . "Hardness: " . TextFormat::WHITE . $config[0]);
+	      $sender->sendMessage($prefix . TextFormat::GRAY . "Blast Resistance: " . TextFormat::WHITE . $config[1]);
 	      return true;
 		    
 	    } else {
