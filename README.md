@@ -1,5 +1,5 @@
 # BedrockTweaker
-BedrockTweaker is a Plugin for MCPE Servers to use freely. This plugin is UNFINISHED and is still under development. BedrockTweaker tweaks bedrock so it is breakable (yet much harder than any other block in Minecraft including Obsidian.) and soon to be customizable to change the Hardness, Blast Resistance, etc. And can be toggled to turn on and off the plugin in-game.
+BedrockTweaker is currently unfinished! There is a known issue where PocketMine interferes with the bedrock file making it so the bedrock reappears right after being broken (Any ideas or fixes can be left in the Issues tab). This plugin is still being developed and will be until the issue is fixed. Below is some other information including the Commands for the plugin and changelog.
 
 ### Commands
 These are the commands for BedrockTweaker as of now:
@@ -10,6 +10,6 @@ These are the commands for BedrockTweaker as of now:
 |/bedrocksetblastresistance|Sets the Blast Resistance of Bedrock.                   |/bsetblastresistance              |
 |/bedrockstats             |Gets the current Hardness & Blast Resistance of Bedrock.|/bstats                           |
 
-### Changelog
+### Changelog (Still not fully complete!)
 - 0.0.2 - Uploaded the project to GitHub
 - 0.0.7 - Added a bunch of changes to the code and added some commands
