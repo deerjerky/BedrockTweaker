@@ -9,9 +9,6 @@ use EventfulDeer48\BedrockTweaker;
 
 class Bedrock extends Solid{
 
-	$config[0] = 100;
-	$config[1] = 20000;
-
 	protected $id = self::BEDROCK;
 
 	public function __construct(){
