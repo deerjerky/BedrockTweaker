@@ -18,6 +18,10 @@ class BedrockTweaker extends PluginBase implements Listener {
     $this->getLogger()->info(TextFormat::GREEN . "BedrockTweaker is now enabled on " . $this->getServer()->getName());
     $this->getServer()->getPluginManager()->registerEvents($this, $this);
     BlockFactory::registerBlock(new Bedrock(), true);
+	if (!$config) {
+		$config[0] = 100;
+		$config[1] = 20000;
+	}
   }
 
   public function onLoad() : void {
