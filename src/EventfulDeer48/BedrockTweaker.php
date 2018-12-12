@@ -112,6 +112,15 @@ class BedrockTweaker extends PluginBase implements Listener {
 	    } else {
 	      return false;
 	    }
+	break;
+		
+	case "bedrockreset":
+		
+		if ($sender->hasPermission("bedrock.reset" || $sender->hasPermission("bedrocktweaker.*")) {
+			$config[0] = 100;
+			$config[1] = 20000;
+			$sender->sendMessage($prefix . TextFormat::GREEN . "Bedrock stats have been reset.");
+		}
 	  }
     }
   }
