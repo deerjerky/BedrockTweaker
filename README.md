@@ -4,11 +4,12 @@ BedrockTweaker is currently unfinished! There is a known issue where PocketMine 
 ### Commands
 These are the commands for BedrockTweaker as of now:
 
-|Command Name              |Description                                             |Aliases                           |
-|--------------------------|--------------------------------------------------------|----------------------------------|
-|/bedrocksethardness       |Sets the Hardness of Bedrock.                           |/bsethardness                     |
-|/bedrocksetblastresistance|Sets the Blast Resistance of Bedrock.                   |/bsetblastresistance              |
-|/bedrockstats             |Gets the current Hardness & Blast Resistance of Bedrock.|/bstats                           |
+|Command Name              |Description                                             |Aliases             |
+|--------------------------|--------------------------------------------------------|--------------------|
+|/bedrocksethardness       |Sets the Hardness of Bedrock.                           |/bsethardness       |
+|/bedrocksetblastresistance|Sets the Blast Resistance of Bedrock.                   |/bsetblastresistance|
+|/bedrockstats             |Gets the current Hardness & Blast Resistance of Bedrock.|/bstats             |
+|/bedrockreset             |Resets the Bedrock stats to the default.                |/breset             |
 
 ### Changelog (Still not fully complete!)
 - 0.0.2 - Uploaded the project to GitHub
