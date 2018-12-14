@@ -52,7 +52,7 @@ class BedrockTweaker extends PluginBase implements Listener {
   public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
 
     $command = strtolower($command->getName());
-    $prefix = TextFormat::WHITE . "[" . TextFormat::GREEN . "Bedrock" . TextFormat::ORANGE . "Tweaker" . TextFormat::WHITE . "]" . TextFormat::GRAY . ">>";
+    $prefix = TextFormat::GREEN . "B" . TextFormat::RED . "T" . TextFormat::GRAY . " > ";
 
     switch($command) {
 
@@ -102,7 +102,7 @@ class BedrockTweaker extends PluginBase implements Listener {
 		    
 	  case "bedrockstats":
 		    
-	    if ($sender->hasPermission("bedrocktweaker.stats" || $sender->hasPermission("bedrocktweaker.*")) {
+	    if ($sender->hasPermission("bedrocktweaker.stats") || $sender->hasPermission("bedrocktweaker.*")) {
 		    
 	      $sender->sendMessage($prefix . TextFormat::WHITE . "The current stats of Bedrock are:");
 	      $sender->sendMessage($prefix . TextFormat::GRAY . "Hardness: " . TextFormat::WHITE . $config[0]);
@@ -116,7 +116,7 @@ class BedrockTweaker extends PluginBase implements Listener {
 		
 	case "bedrockreset":
 		
-		if ($sender->hasPermission("bedrocktweaker.reset" || $sender->hasPermission("bedrocktweaker.*")) {
+		if ($sender->hasPermission("bedrocktweaker.reset") || $sender->hasPermission("bedrocktweaker.*")) {
 			$config[0] = 100;
 			$config[1] = 20000;
 			$sender->sendMessage($prefix . TextFormat::GREEN . "Bedrock stats have been reset.");
