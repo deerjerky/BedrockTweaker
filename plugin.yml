@@ -15,6 +15,9 @@ commands:
   bedrockstats:
     usage: /bedrockstats
     aliases: bstats
+  bedrockreset:
+    usage: /bedrockreset
+    aliases: breset
 permissions:
   bedrocktweaker.*:
     default: op
@@ -25,3 +28,6 @@ permissions:
       bedrocktweaker.stats:
         default: op
         description: With this permission players will be able to see the current values of Hardness and Blast Resistance of Bedrock.
+      bedrocktweaker.reset:
+        default: op
+        description: With this permission players will be able to reset the bedrock's Hardness/Blast Resistance to the default.
