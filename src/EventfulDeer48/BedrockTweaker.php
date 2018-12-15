@@ -121,7 +121,6 @@ class BedrockTweaker extends PluginBase implements Listener {
 			$config[1] = 20000;
 			$sender->sendMessage($prefix . TextFormat::GREEN . "Bedrock stats have been reset.");
 		}
-	  }
     }
   }
 }
