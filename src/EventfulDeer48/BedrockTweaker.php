@@ -45,7 +45,8 @@ class BedrockTweaker extends PluginBase implements Listener {
       if ($event->getItem()->getID() !== 278) {
 
         $event->setCancelled(true);
-	        }
+	        } else {
+	      $event->setCancelled(false);
 	    }
 	}
 
